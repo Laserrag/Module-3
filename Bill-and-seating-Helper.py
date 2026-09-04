@@ -3,7 +3,7 @@ def total_bill(bill_amount, tip_perc):
     total = round(total, 2)
     print(f"Please pay ${total}")
     return total
- 
+
 print(total_bill(150, 20))
 
 def seating_arrangements(guests):
@@ -11,8 +11,7 @@ def seating_arrangements(guests):
     if guests == 0 or guests == 1:
         return 1
     else:
-        return guests * seating_arrangements(guests - 1)
- 
+        return guests * seating_arrangements(guests - 1) 
  
 print(seating_arrangements.__doc__)
 

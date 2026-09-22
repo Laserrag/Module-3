@@ -3,24 +3,24 @@ import random
 
 #Assignment 1 
 
-playing = True
-num = str(random.randint(1, 10))
-print("Welcome to the Number Guessing Game!")
-while playing:
-    guess = input("Guess a number between 1 and 10(You have 3 attempts): ")
-    attempt = 3
-    while attempt > 0:
-        if guess == num:
-            print("Congratulations! You guessed the correct number:", num)
-            playing = False
-            break
-        else:
-            attempt -= 1
-            if attempt > 0:
-                guess = input(f"Sorry, that's not the correct number. Try again!(You have {attempt} attempts left): ")
-            else:
-                print("Sorry, you've run out of attempts. The correct number was:", num)
-                playing = False
+# playing = True
+# num = str(random.randint(1, 10))
+# print("Welcome to the Number Guessing Game!")
+# while playing:
+#     guess = input("Guess a number between 1 and 10(You have 3 attempts): ")
+#     attempt = 3
+#     while attempt > 0:
+#         if guess == num:
+#             print("Congratulations! You guessed the correct number:", num)
+#             playing = False
+#             break
+#         else:
+#             attempt -= 1
+#             if attempt > 0:
+#                 guess = input(f"Sorry, that's not the correct number. Try again!(You have {attempt} attempts left): ")
+#             else:
+#                 print("Sorry, you've run out of attempts. The correct number was:", num)
+#                 playing = False
 
 #Assignment 2
 
@@ -52,4 +52,4 @@ while playing1:
         else:
             print("The computer wins!")
             print("Score(yours):", score)
-    break
+    break   
